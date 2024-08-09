@@ -45,3 +45,12 @@ Also must include `func main(){}`
 Import allows you to include someone elses package / library (reusable code as above) in your application...
 
 [Reference](https://golang.org/pkg)
+
+## Projects
+
+[Card Game](./projects/card_game/readme.md)
+
+## Type conversion
+
+new_type(type to convert)
+
