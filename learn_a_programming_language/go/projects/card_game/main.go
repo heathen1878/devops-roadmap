@@ -1,18 +1,28 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // variables can be defined outside of the main function
 
 func main() {
 	cards := newDeck()
 
-	hand, remainingDeck := deal(cards, 5)
+	cards.shuffle()
 
+	hand, _ := deal(cards, 5)
+
+	fmt.Println("Dealt hand...")
 	hand.print()
-	remainingDeck.print()
+	fmt.Println()
+	//fmt.Println("Remainder of deck...")
+	//remainingDeck.print()
 
-	fmt.Println(cards.toString())
+	//cards.writeToFile("cards.txt")
 
-	cards.writeToFile("cards.txt")
+	//deckFromFile := readFromFile("cards.txt")
+	//fmt.Println()
+	//fmt.Println("Deck from file...")
+	//fmt.Println(deckFromFile)
 }

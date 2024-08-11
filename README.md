@@ -4,8 +4,6 @@
 
 ## Learn a programming language
 
-### Go 
+### Go
 
 [read me](./learn_a_programming_language/go/readme.md)
-
-
